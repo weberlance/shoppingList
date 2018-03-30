@@ -1,0 +1,3 @@
+@function colWidth($width, $grid){
+  @return percentage($width/$grid);
+}

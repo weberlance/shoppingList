@@ -1,0 +1,46 @@
+
+@import 'normalize';
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+
+
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
+*{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  height: 100%;
+  min-width: 320px;
+  // min-width: $mainWidth+$gap;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: $mainFontSize;
+  // color: $light;
+}
+.container{
+  @include container;
+}
+.unstyled{
+  @include listUnstyled;
+}
+.clearfix{
+  &:after{
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+// @font-face { 
+//   font-family: 'Adelle'; 
+//   src:
+//     url('../fonts/adelle_regular-webfont.woff2') format('woff2'),
+//     url('../fonts/adelle_regular-webfont.woff') format('woff'); 
+//   font-weight: normal; 
+//   font-style: normal; 
+// }

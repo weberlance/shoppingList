@@ -1,0 +1,69 @@
+
+// universal
+@mixin container($width: $mainWidth) {
+  max-width: $width + $gap;
+  padding: 0 $gap/2;
+  // max-width: $width;
+  // padding: 0;
+  position: relative;
+  margin: auto;
+}
+@mixin roundedCorn($r){
+  border-radius: $r;
+}
+@mixin centered($pos){
+  position: $pos;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin listUnstyled{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@mixin ff($font){
+  font-family: $font, Arial, sans-serif;
+// font-family: 'Montserrat', Arial, sans-serif;
+// font-family: 'Open Sans', Arial, sans-serif;
+}
+@mixin bg-icon{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+@mixin linkReset{
+  text-decoration: none;
+  color: #000;
+}
+@mixin btn{
+  @include linkReset;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: $light;
+  color: $blue;
+  border-radius: 12px;
+  border: none;
+  font-family: 'Rounded', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  &:hover{
+    cursor: pointer;
+  }
+  // &:active{
+  //   background-color: darken($light, 10%);
+  // }
+  &:focus{
+    outline: none;
+  }
+}
+
+
+// special
+
+
+
+
+
+
+
