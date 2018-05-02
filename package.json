@@ -1,28 +1,27 @@
-need to handle this file
 {
-  "name": "",
-  "version": "1.0.0",
+  "name": "shopping_list",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "Andrew Pit",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
+    "autoprefixer": "^8.2.0",
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
-    "gulp-file-include": "^1.2.0",
     "gulp-imagemin": "^3.4.0",
     "gulp-postcss": "^7.0.0",
-    "gulp-real-favicon": "^0.2.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "run-sequence": "^2.2.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.9",
+    "bootstrap": "^4.0.0"
   }
 }
